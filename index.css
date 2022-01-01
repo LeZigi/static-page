@@ -1,0 +1,575 @@
+*{
+	/*margin: 0 auto;*/
+	/*this property ensures that no additional px are added e.g if eidth is 5px then pad of 2px wont make the total w 7px*/
+	box-sizing: border-box;
+
+	/*the bit below has just been added from stack overflow so as to:
+	Add a css reset to the top of your website style sheet, different browsers 
+	render some default margin and padding and perhaps external style sheets do 
+	something you are not aware of too, a css reset will just initialize a fresh 
+	palette so to speak.
+	This is because i was having a stubborn white space at the top and sides of my 
+	HTML page. It works like magic :D;
+	*/
+		margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+}
+
+body{
+	/*background: black;*/
+	/*overflow: hidden;*/
+	/*height: 40rem;*/
+	/*background: linear-gradient(90deg, #D9DD39 1.28%, #E8A3A3 100%);*/
+}
+
+#header{
+	/*position: absolute;
+	top: 0;
+	left: 0;*/
+	width: 100%;
+	height: 950px;
+	background: linear-gradient(90deg, #D9DD39 1.28%, #E8A3A3 100%);
+}
+.navContainer{
+	/*width: 100%;*/
+	justify-content: space-between;
+	/*background-color: white;*/
+	height: 5rem;
+	align-items: center;
+
+	  /*position: -webkit-sticky; *//* Safari */
+	  /*position: sticky;*/
+	  /*top: 0;*/
+	  /*background: hsl(0 0% 100% / 0.1);*/
+	  /*backdrop-filter: blur(78rem);*/
+	  /*border: 2px solid #4CAF50;*/
+}
+
+.navlinks {
+	list-style: none;
+	margin-right: 2rem;
+	font-family: Poppins, Roboto, san-serif;
+	/*color: #393737;*/
+/*	background: hsl(0 0% 100% / 0.1);
+	backdrop-filter: blur(78rem);*/
+}
+
+/*why the heck isnt this working*/
+@supports(backdrop-filter: blur(8rem)){
+	.navContainer{
+	  background: hsl(0 0% 100% / 0.1);
+	  backdrop-filter: blur(78rem);
+	}
+}
+
+.navlinks a {
+	/*text-decoration: none*/
+}
+
+#logo{
+	margin: 2rem;
+	/*color: yellow;*/
+	/*background: #0E4949;*/
+	height: 4rem;
+	width: 7rem;
+	background-image: url("imgs/logo.svg");
+	background-position: center; /* Center the image */
+ 	background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.heroContainer{
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+	/*background-color: blue;*/
+	/*gap:var(--gap, 1rem);*/
+}
+
+.heroContainer .heroStatements{
+	/*flex: 1;*/
+	width: 70%;
+	/*flex-direction: column;*/
+	/*background-color: blue;*/
+	position: relative;
+ }
+.heroStatements .heroHeader{
+	font-size: 4rem;
+	font-family:  Rubik, Roboto, san-serif;
+	/*font-style: normal;*/
+	font-weight: 900;
+	/*font-size: 52px;*/
+	/*line-height: 4.025rem;*/
+	/*background-color: blue;*/
+	margin-bottom: 1.675rem;
+}
+.heroStatements .heroStatement{
+	width: 70%;
+	font-family: Roboto, san-serif;
+	/*font-style: normal;*/
+	/*font-weight: normal;*/
+	font-size: 1.125rem;
+	/*font-size: 22px;*/
+	line-height: 26px;
+	color: #393737;
+	margin-bottom: 1.675rem;
+}
+.heroStatements button{
+	width: 128px;
+	height: 39px;
+	background: #0E4949;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	/*padding: 10px;*/
+	/*font-size: 1.125rem;*/
+	font-family: Roboto, poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 19px;
+	color: #FFFFFF;
+	border: none;
+}
+.heroStatements .callNow{
+	position: absolute;
+	right: 0.625rem;
+	bottom: 1rem;
+	/*background-color: red;*/
+	width: 8.875rem;
+	height: 3rem;
+}
+.callNowIcon {
+	/*display: flex;*/
+	justify-content: center;
+	gap:var(--gap, 0.625rem);
+}
+
+.callNowIcon .fa-phone{
+	transform: rotate(90deg);
+}
+
+.callNowIcon span{
+	font-family: Roboto, san-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.1875rem;
+	color: #393737;
+}
+.callNowPhone{
+	font-family: Roboto, san-serif;
+	font-weight: 500;
+	font-size: 1.125rem;
+	line-height: 1.3125rem;
+	color: #000000;
+}
+#heroPicture{
+	/*background-color: red;*/
+	/*margin: 2rem;*/
+	height: 391px;
+	width: 320px;
+	background-image: url("imgs/cs.png");
+	background-position: center; /* Center the image */
+ 	background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.flex{
+	display: flex;
+	gap:var(--gap, 2rem);
+}
+.flexi{
+	display: flex;
+}
+/*starting design of the three columns*/
+#threeHeroColumns{
+	width: 80%;
+	/*height: 30rem;*/
+	/*display: flex;*/
+	justify-content: space-between;
+	margin: 2rem auto;
+
+}
+
+#threeHeroColumns .residential, .cabinet, .interior{
+	width: 20.25rem;
+	height: 25.3125rem;
+	background: #0E4949;
+	border-radius: 0.3125rem;
+	color: #ffffff;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap:var(--gap, 2rem);
+	font-family: roboto, san-serif;
+	/*padding: 1.25rem;*/
+	position: relative;
+}
+
+.threeHeroColumnsHead{
+	width: 16.5625rem;
+	text-align: center;
+	font-size: 1.5625rem;
+	position: absolute;
+	top: 1.5625rem;
+
+}
+
+.threeHeroColumnsBtn{
+	width: 70%;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	padding: 0.625rem;
+	background: #fff;
+	border: none;
+	/*font-weight: 300;*/
+	color: #0E4949;
+	position: absolute;
+	bottom: 2rem;
+}
+
+.threeHeroColumnsBody{
+	text-align: center;
+	width: 15.0625rem;
+	font-size: 1.125rem;
+	line-height: 2rem;
+	/*font-weight: 700;*/
+	color: #F1F3E6;
+	font-weight: 300;
+
+}
+
+.threeHeroColumnsBody span{
+	color: #D9DD39;
+}
+
+
+/*our promise section*/
+#ourPromise{
+	/*position: absolute;*/
+	/*width: 80%;*/
+	margin: 0 auto;
+	height: 47.6875rem;
+	justify-content: center;
+	align-items: center;
+}
+.promiseWrapperContainer{
+	width: 73.3125rem;
+	/*width: 80%;*/
+	background: #0E4949;
+	/*background: #2D77BB;*/
+	height: 41.3125rem;
+	border-radius: 0.625rem;
+}
+.promiseWrapper{
+	border-radius: 0.625rem;
+	width: 62.125rem;
+	background: #fffffe;
+	height: 35.175rem;
+	margin: auto;
+/*	justify-content: center;
+	flex-direction: column;*/
+	padding: 1.25rem 1.875rem;
+	font-family: Roboto, san-serif;
+}
+.promiseWrapper h2{
+	text-align: center;
+	margin-top: 1.25rem;
+	font-size: 1.125rem;
+	color: #0E4949;
+	/*font-family: roboto, san-serif;*/
+}
+.promiseWrapperParagraph{
+	width: 100%;
+	justify-content: center;
+	margin-top: 1.875rem;
+
+}
+.promiseWrapperParagraph p{
+	font-size: 1.5625rem;
+	width: 21.4375rem;
+	/*font-family: roboto, san-serif;*/
+	line-height: 1.875rem;
+	text-align: center;
+	color: #393737;
+}
+.promises{
+	/*background: red;*/
+	height: 17.125rem;
+	margin-top: 1.875rem;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap:var(--gap, 1rem);
+	align-items: center;
+}
+.promise{
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+	/*width: 20.5rem;*/
+	width: 20.9375rem;
+	gap:var(--gap, 1rem);
+
+}
+.promise span{
+}
+
+.fa-check-circle{
+	color: #0E4949;
+}
+
+#ourServices{
+	height: 40.625rem;
+	background: linear-gradient(90deg, #D9DD39 1.28%, #E8A3A3 100%);
+	/*background: #0E4949;*/
+	position: relative;
+	/*width: 73.3125rem;*/
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 1.25rem;
+}
+
+#forTest{
+	height: 15rem;
+	width: 15rem;
+	background: blue;
+}
+/*.ourServicesHeader{
+	width: 100%;
+
+}
+.ourServicesTitle{
+	text-align: center;
+}
+.ourServicesStatement{
+	width: 32.25rem;
+}
+
+.circle1Container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: purple;
+}
+
+.circle1{
+	position: absolute;
+	top: -3rem;
+	right: 2rem;
+	height: 25rem;
+}
+.cirle2{
+	position: absolute;
+	bottom: -3rem;
+	left: -2rem;
+}
+.cirle3{
+	position: absolute;
+	bottom: 3rem;
+	right: 6rem;
+}*/
+#ourWork{
+
+}
+
+.ourWorkImgs{
+	width: 72.1875rem;
+	flex-wrap: wrap;
+	margin: 2rem auto;
+	/*background: red;*/
+	gap:var(--gap, 1rem);
+	justify-content: center;
+}
+.workImgs{
+	width: 20.9375rem;
+	height: 14.0625rem;
+	border-radius: 0.625rem;
+	background-position: center; /* Center the image */
+ 	background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+}
+
+.ourWorkTitle{
+	text-align: center;
+	margin: 2rem 0;
+	font-family: Roboto, san-serif;
+	font-size: 1.125rem;
+	line-height: 1.3125rem;
+	font-weight: 700;
+	color: #0E4949;
+}
+.ourWorkSubTitle{
+	width: 16.875rem;
+	text-align: center;
+	margin: 1.875rem auto;
+	font-family: Roboto, san-serif;
+	font-size: 1.5625rem;
+	font-weight: 400;
+	line-height: 1.875rem;
+
+}
+.ourWorkStatement{
+	margin: 1.875rem auto;
+	width: 36rem;
+	text-align: center;
+	font-family: Roboto, san-serif;
+	font-size: 1.125rem;
+	line-height: 1.3125rem;
+	color: #393737;
+}
+
+/*------------enter Trusted section*/
+#trusted{
+	width: 100%;
+	/*background: green;*/
+}
+
+.trustedContainer{
+	width: 72.5rem;
+	/*height: 42.5rem;*/
+	height: 40.625rem;
+	margin: 3rem auto;
+	/*background: blue;*/
+	border-top: 0.1875rem solid #0E4949;;
+	border-bottom: 0.1875rem solid #0E4949;
+	justify-content: center;
+	gap:var(--gap, 1rem);
+	align-items: center;
+
+}
+
+.trustedLadder{
+	/*background: blue;*/
+	height: 80%;
+	flex: 1;
+	position: relative;
+	/*background: linear-gradient(180deg, #FFFFFF 1.28%, #E8A3A3 90%);*/
+}
+.ladderImg{
+	width: 28.875rem;
+	height: 37.375rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 99;
+}
+.ladderGradient{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 6.25rem;
+	z-index: 999;
+	/*background: linear-gradient(180deg, rgba(255, 0, 0,0) 1.2%, rgba(255, 0, 0,1) 100%);*/
+	background: linear-gradient(180deg, rgba(255, 255, 255,0) 1%, rgba(255, 255, 255,1) 100%);
+}
+.ladderBigSquare{
+	position: absolute;
+	width: 20rem;
+	height: 20rem;
+	background: rgba(14, 73, 73,.3);
+	bottom: 0;
+	left: 4rem;
+	/*----------------------*/
+	 animation-name: big;
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+}
+@keyframes big {
+  0%   {left:4rem; bottom: 0rem;}
+  25%  {left:3rem; bottom: 2rem;}
+  50%  {left:5rem; bottom: 3rem;}
+  75%  {left:3rem; bottom: 2rem;}
+  100% {left:4rem; bottom: 0rem;}
+}
+
+.ladderMediumSquare{
+	position: absolute;
+	width: 12.5rem;
+	height: 12.5rem;
+	background: rgba(0, 153, 255,.2);
+	top: 4rem;
+	right: 13rem;
+	z-index: -2;
+	/*--------------*/
+	 animation-name: medium;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+}
+@keyframes medium {
+  0%   {right:13rem; top:4rem;}
+  25%  {right:13rem; top:5rem;}
+  50%  {right:13rem; top:6rem;}
+  75%  {right:13rem; top:5rem;}
+  100% {right:13rem; top:4rem;}
+}
+
+.ladderSmallSquare{
+	position: absolute;
+	width: 4.375rem;
+	height: 4.375rem;
+	background: rgba(255, 255, 102,.3);
+	top: 9rem;
+	left: 13rem;
+	z-index: -2;
+	/*----------*/
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+}
+@keyframes example {
+  0%   {background-color:rgba(0, 51, 0,.9); left:13rem; top:9rem;}
+  25%  {background-color:rgba(0, 51, 0,.7); left:13rem; top:8rem;}
+  50%  {background-color:rgba(0, 51, 0,.4); left:13rem; top:7rem;}
+  75%  {background-color:rgba(0, 51, 0,.8); left:13rem; top:8rem;}
+  100% {background-color:rgba(0, 51, 0,.9); left:13rem; top:9rem;}
+}
+
+.trustedStatementContainer{
+    height: 80%; 
+	/*flex: 1;*/
+	width: 30rem;
+
+
+}
+
+.trustedTitle{
+	text-align: center;
+	margin: 2rem 0;
+	font-family: Roboto, san-serif;
+	font-size: 1.125rem;
+	line-height: 1.3125rem;
+	font-weight: 700;
+	color: #0E4949;
+}
+
+.trustedSubTitle{
+	width: 21.1875rem;
+	margin: 2rem auto;
+	text-align: center;
+	font-family: Roboto, san-serif;
+	font-size: 1.5625rem;
+	font-weight: 500;
+	line-height: 1.875rem;
+}
+
+.trustedStatement{
+	width: 30rem;
+	font-family:  Roboto, san-serif;
+	font-size: 1.125rem;
+	line-height: 1.6875rem;
+	color: #393737;
+	text-align: justify;
+}
+
+
+
+
+
+
