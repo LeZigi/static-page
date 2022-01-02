@@ -539,9 +539,9 @@ body{
 
 }
 
-.trustedTitle{
+.trustedTitle, .testimonialsTitle{
 	text-align: center;
-	margin: 2rem 0;
+	margin: 1rem 0;
 	font-family: Roboto, san-serif;
 	font-size: 1.125rem;
 	line-height: 1.3125rem;
@@ -567,6 +567,83 @@ body{
 	color: #393737;
 	text-align: justify;
 }
+
+/*-----------Enter testimonial section-----------------*/
+#testimonials{
+	width: 100%;
+	/*height: 400px;*/
+
+}
+.testimonialStatement{
+	width: 21.1875rem;
+	margin: 1rem auto;
+	text-align: center;
+	font-family: Roboto, san-serif;
+	font-size: 1.5625rem;
+	font-weight: 500;
+	line-height: 1.875rem;
+	/*color: #393737;*/
+
+}
+
+.testimonialsContainer{
+	/*background: green;*/
+	margin: 1.125rem auto;
+	width: 68.4375rem;
+	justify-content: space-between;
+	/*gap:var(--gap, 2rem);*/
+
+}
+
+.testimony{
+	width: 20.9375rem;
+	height: 14.625rem;
+	/*background: red;*/
+	border-radius: .625rem;
+	border: 0.125rem solid #0E4949;
+	position: relative;
+	justify-content: center;
+
+}
+.moniPic{
+	position: absolute;
+	height: 3.75rem;
+	width: 3.75rem;
+	border-radius: 50%;
+	border: 0.125rem solid #0E4949;
+	background-position: center; 
+ 	background-repeat: no-repeat; 
+    background-size: cover; 
+    top: .625rem;
+    /*left: 50%;*/
+}
+
+.testimony h3{
+	position: absolute;
+	top: 4.875rem;
+}
+.starRating{
+	position: absolute;
+	top: 6.125rem;
+	/*justify-content: ;*/
+	gap:var(--gap, .125rem);
+
+}
+.fa-star{
+	color: #D9DD39;
+}
+
+.testimonyStatement{
+	position: absolute;
+	bottom: .125rem;
+	width: 90%;
+	font-family:  Roboto, san-serif;
+	font-size: .875rem;
+	line-height: 1.6875rem;
+	/*color: #393737;*/
+	text-align: center;
+}
+
 
 
 
