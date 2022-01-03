@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+	box-sizing: border-box;
+}
+
+.flex{
+	display: flex;
+	/*gap:var(--gap, 2rem);*/
+}
+
+.navContainer{
+	justify-content: space-between;
+	/*padding: .3125rem;*/
+	align-items: center;
+	height: 5rem;
+	background: #043535;
+}
+
+#logo{
+	margin: 2rem;
+	/*color: yellow;*/
+	/*background: #0E4949;*/
+	height: 4rem;
+	width: 7rem;
+	background-image: url("imgs/logoi.svg");
+	background-position: center; /* Center the image */
+ 	background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.navlinks{
+	margin-right: 1.25rem;
+	list-style: none;
+	font-family: Poppins, Roboto, san-serif;
+	gap:var(--gap, 2rem);
+}
+.navlinks li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.contactContainer{
+	width: 80%;
+	/*background: tomato;*/
+	/*height: 400px;*/
+	height: 40.625rem;
+	margin: 5rem auto;
+	border-radius: 1.25rem;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+.contactInfo{
+	border-top-left-radius: 1.25rem;
+	border-bottom-left-radius: 1.25rem;
+	background: #043535;
+	height: 100%;
+	flex: 2;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.contactInfo p, .contactInfoTitle, .contactDetails{
+	font-family: Poppins;
+	font-size: 1.125rem;
+	line-height: 1.6875rem;
+	color: #FFFFFF;
+ }
+
+.contactInfoTitle{
+	font-family: Rubik, san-serif;
+	text-align: center;
+	margin: 3rem 0;
+	font-size: 1.5625rem;
+
+}
+
+.contactInfo p{
+	width: 90%;
+	margin: 3rem auto;
+	font-size: 1rem;
+}
+
+.contactDetails{
+	font-family: Rubik;
+	font-size: 1rem;
+	width: 23.75rem;
+	margin: 2rem auto;
+	flex-direction: column;
+	align-items: center;
+	gap:var(--gap, .3125rem);
+
+}
+.fa-phone{
+	transform: rotate(90deg);
+}
+.locationText{
+	text-align: center;
+}
+.line{
+	width: 18.75rem;
+	height: 0.3125rem;
+	transform: rotate(45deg);
+	position: absolute;
+	bottom: 4rem;
+	left: -3rem;
+	background: #fff;
+}
+
+
+.contactForm{
+	/*background: blue;*/
+	height: 100%;
+	flex: 3;
+}
+
+
+
+
+
+
+/*---------Enter footer section---------------*/
+#footer{
+	margin-top: 5rem;
+	border-top: 0.125rem solid rgba(180, 177, 177,.7);
+	height: 5rem;
+	/*width: 100%;*/
+	align-items: center;
+	justify-content: center;
+}
+#footer span{
+	/*text-align: center;*/
+	font-family:  Roboto, san-serif;
+	font-size: .875rem;
+	line-height: 1.6875rem;
+	color: rgb(133, 122, 122);
+}
