@@ -46,8 +46,8 @@
 }
 
 .navlinks {
-	list-style: none;
 	margin-right: 2rem;
+	list-style: none;
 	font-family: Poppins, Roboto, san-serif;
 	/*color: #393737;*/
 /*	background: hsl(0 0% 100% / 0.1);
@@ -79,11 +79,11 @@
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 .heroContainer{
-	justify-content: space-between;
+	justify-content: center;
 	width: 80%;
 	margin: 0 auto;
 	/*background-color: blue;*/
-	/*gap:var(--gap, 1rem);*/
+	gap:var(--gap, .3125rem);
 }
 
 .heroContainer .heroStatements{
@@ -94,7 +94,7 @@
 	position: relative;
  }
 .heroStatements .heroHeader{
-	font-size: 4rem;
+	font-size: 3rem;
 	font-family:  Rubik, Roboto, san-serif;
 	/*font-style: normal;*/
 	font-weight: 900;
@@ -112,7 +112,7 @@
 	/*font-size: 22px;*/
 	line-height: 26px;
 	color: #393737;
-	margin-bottom: 1.675rem;
+	margin-bottom: 2rem;
 }
 .heroStatements button{
 	width: 128px;
@@ -333,40 +333,7 @@
 	width: 15rem;
 	background: blue;
 }
-/*.ourServicesHeader{
-	width: 100%;
 
-}
-.ourServicesTitle{
-	text-align: center;
-}
-.ourServicesStatement{
-	width: 32.25rem;
-}
-
-.circle1Container{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	background: purple;
-}
-
-.circle1{
-	position: absolute;
-	top: -3rem;
-	right: 2rem;
-	height: 25rem;
-}
-.cirle2{
-	position: absolute;
-	bottom: -3rem;
-	left: -2rem;
-}
-.cirle3{
-	position: absolute;
-	bottom: 3rem;
-	right: 6rem;
-}*/
 #ourWork{
 
 }
@@ -565,12 +532,6 @@
 }
 
 /*-----------Enter testimonial section-----------------*/
-#testimonials{
-	/*width: 100%;*/
-	/*height: 400px;*/
-	/*.0625*/
-
-}
 
 .testimonialStatement{
 	width: 21.1875rem;
@@ -659,18 +620,165 @@
 	color: rgb(133, 122, 122);
 }
 
+/*---------___--------Enter media 480px------------------------------------------------*/
+@media only screen and (max-width:768px){
 
-.contactContainer{
-	width: 80%;
-	background: tomato;
-}
-.contactDetails{
-	background: red;
-}
-.contactForm{
-	background: blue;
+	#header{
+		height: 850px;
+		background-color: blue;
+		width: 60%;
+	}
+
+	.heroContainer{
+		background: red!important;
+		width: 90%;
+		gap:var(--gap, .625rem);
+	}
+
+	.heroStatements .heroHeader{
+		font-size: 1rem;
+	}
+
 }
 
+@media only screen and (max-width:700px){
+
+	#header{
+		height: 850px;
+		background-color: purple;
+		width: 60%;
+	}
+
+	.heroContainer{
+		background: red!important;
+		width: 90%;
+		gap:var(--gap, .625rem);
+	}
+
+	.heroStatements .heroHeader{
+		font-size: 1rem;
+	}
+
+}
+/*------------------enter max width 768px--------------------------------*/
+/*@media all and (max-width: 768px){
+
+	.heroContainer{
+		width: 90%;
+		gap:var(--gap, .625rem);
+		background: blue;
+	}
+
+	#threeHeroColumns{
+		width: 90%;
+		gap:var(--gap, .3125rem);
+	}
+
+	#threeHeroColumns .residential, .cabinet, .interior{
+		width: 33.33%;
+		height: 18.75rem;
+		background: red;
+
+	}
+
+	.threeHeroColumnsHead{
+		width: 90%;
+		text-align: center;
+		font-size: 1.125rem;
+		line-height: 1.3125rem
+		position: absolute;
+		top: 1.5625rem;
+
+	}
+
+	.threeHeroColumnsBody{
+		width: 95%;
+		font-size: 1rem;
+		line-height: 1.3125rem;
+	}*/
+	/*-------------------------------------------------------------*/
+	/*#header{
+		height: 850px;
+	}
+	.navContainer{
+		height: 5rem;
+	}
+
+	.navlinks {
+		gap:var(--gap, 1rem);
+	}
+
+	#logo{
+		margin-left: .3125rem;
+	}
+
+	.heroContainer{
+		width: 90%;
+		gap:var(--gap, .3125rem);
+	}
+
+	.heroStatements .heroHeader{
+		font-size: 3rem;
+	}
+
+	#heroPicture{
+		height: 21.875rem;
+		width: 18.75rem;
+	}*/
+
+	/*-----------------------promises-----------------------------*/
+	/*.promiseWrapper{
+		width: 95%;
+		height: 31.175rem;
+	}
+
+	.promises{
+		height: 15.125rem;
+
+	}
+
+	.promise{
+		font-size: 1rem;
+		gap:var(--gap, 1rem);
+	}
+*/
+	/*---------------------------------------our work----------------------------------*/
+	/*.ourWorkImgs{
+		width: 90%;
+		flex-wrap: wrap;
+		margin: 2rem auto;
+		gap:var(--gap, 1rem);
+		justify-content: center;
+	}*/
+
+	/*---------------------------TRUSTED---------------------------------*/
+	/*.trustedContainer{
+		width: 90%;
+
+	}
+
+	.trustedLadder{
+		display: none;
+	}
+*/
+	/*-----------------------TESTIMONIALS--------------------------------------*/
+	/*.testimonialsContainer{
+		width: 90%;
+		align-items: center;
+		flex-direction: column;
+		gap:var(--gap, 1.125rem);
+
+	}
+
+	.testimony{
+		width: 31.25rem;
+		height: 15.625rem;
+	}
+
+	.testimonyStatement{
+		top: 8.875rem;
+	}*/
+/*}*/
 
 
 

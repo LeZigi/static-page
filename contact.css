@@ -23,12 +23,12 @@
 }
 
 #logo{
-	margin: 2rem;
+	margin-left: 2rem;
 	/*color: yellow;*/
 	/*background: #0E4949;*/
-	height: 4rem;
+	height: 100%;
 	width: 7rem;
-	background-image: url("imgs/logoi.svg");
+	background-image: url("imgs/logi.svg");
 	background-position: center; /* Center the image */
  	background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -45,14 +45,16 @@
 	color: #fff;
 }
 
+/*-------------------------------------------------------------------------------------*/
 .contactContainer{
-	width: 80%;
 	/*background: tomato;*/
 	/*height: 400px;*/
 	height: 40.625rem;
 	margin: 5rem auto;
 	border-radius: 1.25rem;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+	width: 80%;
+
 }
 .contactInfo{
 	border-top-left-radius: 1.25rem;
@@ -76,9 +78,11 @@
 	font-family: Rubik, san-serif;
 	text-align: center;
 	margin: 3rem 0;
+	line-height: 1.6875rem;
 	font-size: 1.5625rem;
 
 }
+
 
 .contactInfo p{
 	width: 90%;
@@ -112,22 +116,137 @@
 	background: #fff;
 }
 
-
+/*--------------------------------------------------------------*/
 .contactForm{
 	/*background: blue;*/
 	height: 100%;
 	flex: 3;
 }
+.contactFormTitle{
+	font-family: Rubik, san-serif;
+	/*margin: 3rem 0 3rem 3rem;*/
+	line-height: 1.6875rem;
+	font-size: 1.5625rem;
+	width: 80%;
+	margin: 3rem auto;
+}
+.contactFormInputContainer{
+	width: 80%;
+	/*background: red;*/
+	margin: 0 auto;
+	position: relative;
+}
+
+.contactFormInput{
+	flex-direction: column;
+	font-family: Poppins, san-serif;
+	/*font-size: 1.125rem;*/
+	line-height: 1.3125rem;
+}
+
+.contactInputs{
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap:var(--gap, 1.25rem);
+	margin-bottom: 1.25rem;
+}
+
+input{
+	width: 15.625rem;
+	/*width: 21.875rem;*/
+	height: 1.875rem;
+	border: 0.125rem solid rgba(180, 177, 177,.7);
+	border-radius: .625rem;
+	text-align: center;
+	color: #043535;
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+.subject{
+	width: 100%;
+	margin-bottom: 1.25rem;
+}
+
+.textArea{
+	width: 100%;
+	border-radius: .625rem;
+	border: 0.125rem solid rgba(180, 177, 177,.7);
+	height: 9.375rem;
+	/*height: 12.5rem;*/
+	margin-bottom: 2rem;
+
+}
+
+.submitBtn{
+	position: absolute;
+	width: 9.375rem;
+	background: #043535;
+	color: #fff;
+	font-size: 1.125rem;
+	font-family: Poppins, san-serif;
+	border-radius: .625rem;
+	height: 2.5rem;
+	/*height: 1.875rem;*/
+	right: 0;
+ 	
+}
+
+/*-------------FAQ----------------------------*/
+#FAQ{
+	height: 37.5rem;
+	/*height: 40.625rem;*/
+	background: #043535;
+	/*border-radius: 1.25rem;*/
+	/*box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);*/
+	/*width: 80%;*/
+	margin: 0 auto;
+	padding-top: 3rem;
+	border-top-right-radius: 1.25rem;
+	border-top-left-radius: 1.25rem;
+}
+
+.faqTitle{
+	text-align: center;
+	font-family: poppins, Roboto, san-serif;
+	font-size: 1.5625rem;
+	line-height: 1.6875rem;
+	color: #fff;
+}
+.faqStatement{
+	max-width:  61.125rem;
+	font-family: poppins, Roboto, san-serif;
+	font-size: 1.125rem;
+	line-height: 1.3125rem;
+	color: #aaaaaa;
+	margin: 1.875rem auto;
+	text-align: center;
+
+}
+.faqs{
+	margin: 5rem auto;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/*background: red;*/
+	width: 73.125rem;
+	height: 20.625rem;
+	color: #fff;
+	font-size: 1.125rem;
+	line-height: 1.3125rem;
+	gap:var(--gap, 1.25rem);
 
 
+}
 
-
-
-
+.faq p{
+	max-width: 35.5rem;
+	color: #aaaaaa;
+	margin-top: 1rem;
+}
 /*---------Enter footer section---------------*/
 #footer{
-	margin-top: 5rem;
-	border-top: 0.125rem solid rgba(180, 177, 177,.7);
+	/*margin-top: 5rem;*/
+	/*border-top: 0.125rem solid rgba(180, 177, 177,.7);*/
 	height: 5rem;
 	/*width: 100%;*/
 	align-items: center;

@@ -52,7 +52,78 @@
 	 		</div>
 
 	 		<div class="contactForm">
+
+	 			  <h2 class="contactFormTitle">Send a Message</h2>
+
+	 		  <div class="contactFormInputContainer">
+
+	 			  <div class="contactInputs flex">
+	 				<div class="contactFormInput  flex">
+	 					<span>First name</span>
+	 					<input type="" name="">
+	 				</div>
+	 				<div class="contactFormInput flex">
+	 					<span>Last name</span>
+	 					<input type="" name="">
+	 				</div>
+	 				<div class="contactFormInput flex">
+	 					<span>Email</span>
+	 					<input type="" name="">
+	 				</div>
+	 				<div class="contactFormInput flex">
+	 					<span>Phone</span>
+	 					<input type="" name="">
+	 				</div>
+	 			 </div>
+
+ 				<div class="contactFormInput flex">
+ 					<span >Subject</span>
+ 					<input class="subject" type="" name="">
+ 				</div>
+ 				<div class="contactFormInput flex">
+ 					<span>Message</span>
+ 					<textarea class="textArea"></textarea>
+ 				</div>
 	 			
+	 			<button class="submitBtn">Submit</button>
+	 				
+	 		  </div>	
+
+	 		</div>
+
+	 	</div>
+	 	
+	 </section>
+	 <section id="FAQ">
+
+	 	<h2 class="faqTitle">Frequently Asked Questions</h2>
+	 	<p class="faqStatement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies augue vulputate scelerisque rutrum a adipiscing urna scelerisque in. Sed lectus consequat sollicitudin diam.</p>
+	 	
+	 	<div class="faqs flex">
+
+	 		<div class="faq ">
+	 			<h3>Dolor sit amet, consectetur adipiscing elit ?</h3>
+	 			<p>Fringilla odio nullam enim sollicitudin egestas pretium fermentum venenatis, interdum. Sit sit elementum, diam tortor consequa.</p>
+	 		</div>
+	 		<div class="faq ">
+	 			<h3>In felis massa, vestibulum, vel sem ?</h3>
+	 			<p>Purus orci interdum. Sem proin risus aliquam ultricies risus luctus tristique.</p>
+	 		</div>
+	 		<div class="faq ">
+	 			<h3>Sit eget in volutpat nunc volutpat, feugiat volutpat ? </h3>
+	 			<p>Metus convallis ut phasellus sed non nibh varius non elit. Tempor elementum molestie.</p>
+	 		</div>
+	 		<div class="faq ">
+	 			<h3> Blandit nisl pellentesque pellentesque nulla?</h3>
+	 			<p>Diam aliquam phasellus. Ante non in aliquet nam eget et amet neque morbi. </p>
+	 		</div>
+	 		<div class="faq ">
+	 			<h3> Magna ullamcorper turpis nunc, ut eget dignissim ?</h3>
+	 			<p>Consequat nulla. Viverra at imperdiet congue vitae adipiscing varius augue pellentesque ut.</p>
+	 		</div>
+	 		<div class="faq ">
+	 			<h3>Tempor in tortor imperdiet aliquet ? </h3>
+	 			<p>Nec tellus sem pulvinar sed morbi porttitor sit magna imperdiet.</p>
 	 		</div>
 	 	</div>
 	 	
