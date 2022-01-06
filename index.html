@@ -6,6 +6,9 @@
 	<link rel="stylesheet"  href="css/fontawesome.min.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Poppins|Trirong|Rubik|Oswald">
 	<link rel="stylesheet" type="text/css" href="index.css" />
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script src="projectPainters.js" defer></script>
+
 
 </head>
 <body>
@@ -15,7 +18,10 @@
 			<div id="logo" >
 				
 			</div>
-			<ul class="navlinks flex">
+
+			<button class="mobile-nav-toggle"aria-controls="navlinks" aria-expanded="false"><span class="sr-only">MENU</span></button>
+
+			<ul id="navlinks" data-visible="false" class="navlinks flex">
 				<li><a href="contact.php">FAQ</a></li>
 				<li><a href="about.html">ABOUT</a></li>
 				<li><a href="service.html">OUR SERVICES</a></li>

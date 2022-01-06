@@ -25,7 +25,8 @@
 	top: 0;
 	left: 0;*/
 	width: 100%;
-	height: 950px;
+	/*height: 950px;*/
+	padding-bottom: 1.5rem;
 	background: linear-gradient(90deg, #D9DD39 1.28%, #E8A3A3 100%);
 	border-bottom-left-radius: 1.125rem;
 	border-bottom-right-radius: 1.125rem;
@@ -78,6 +79,21 @@
  	background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
+
+.mobile-nav-toggle{
+	display: none;
+}
+.sr-only{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
 .heroContainer{
 	justify-content: center;
 	width: 80%;
@@ -94,7 +110,7 @@
 	position: relative;
  }
 .heroStatements .heroHeader{
-	font-size: 3rem;
+	font-size: 4rem;
 	font-family:  Rubik, Roboto, san-serif;
 	/*font-style: normal;*/
 	font-weight: 900;
@@ -181,13 +197,11 @@
 .flexi{
 	display: flex;
 }
-/*starting design of the three columns*/
+
+
 #threeHeroColumns{
 	width: 80%;
-	/*height: 30rem;*/
-	/*display: flex;*/
-	justify-content: space-between;
-	margin: 2rem auto;
+	margin: 2rem 0;
 
 }
 
@@ -248,8 +262,9 @@
 #ourPromise{
 	/*position: absolute;*/
 	/*width: 80%;*/
-	margin: 0 auto;
-	height: 47.6875rem;
+	/*margin: 3rem auto;*/
+	margin-bottom: 3rem;
+	/*height: 47.6875rem;*/
 	justify-content: center;
 	align-items: center;
 }
@@ -258,14 +273,14 @@
 	/*width: 80%;*/
 	background: #0E4949;
 	/*background: #2D77BB;*/
-	height: 41.3125rem;
+	/*height: 41.3125rem;*/
 	border-radius: 0.625rem;
 }
 .promiseWrapper{
 	border-radius: 0.625rem;
 	width: 62.125rem;
 	background: #fffffe;
-	height: 35.175rem;
+	/*height: 35.175rem;*/
 	margin: auto;
 /*	justify-content: center;
 	flex-direction: column;*/
@@ -295,7 +310,7 @@
 }
 .promises{
 	/*background: red;*/
-	height: 17.125rem;
+	/*height: 17.125rem;*/
 	margin-top: 1.875rem;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -309,8 +324,6 @@
 	width: 20.9375rem;
 	gap:var(--gap, 1rem);
 
-}
-.promise span{
 }
 
 .fa-check-circle{
@@ -620,93 +633,61 @@
 	color: rgb(133, 122, 122);
 }
 
-/*---------___--------Enter media 480px------------------------------------------------*/
-@media only screen and (max-width:768px){
 
-	#header{
-		height: 850px;
-		background-color: blue;
-		width: 60%;
-	}
-
-	.heroContainer{
-		background: red!important;
-		width: 90%;
-		gap:var(--gap, .625rem);
-	}
-
-	.heroStatements .heroHeader{
-		font-size: 1rem;
-	}
-
-}
-
-@media only screen and (max-width:700px){
-
-	#header{
-		height: 850px;
-		background-color: purple;
-		width: 60%;
-	}
-
-	.heroContainer{
-		background: red!important;
-		width: 90%;
-		gap:var(--gap, .625rem);
-	}
-
-	.heroStatements .heroHeader{
-		font-size: 1rem;
-	}
-
-}
 /*------------------enter max width 768px--------------------------------*/
-/*@media all and (max-width: 768px){
+@media all and (max-width: 768px){
 
-	.heroContainer{
-		width: 90%;
-		gap:var(--gap, .625rem);
-		background: blue;
-	}
-
-	#threeHeroColumns{
-		width: 90%;
-		gap:var(--gap, .3125rem);
-	}
-
-	#threeHeroColumns .residential, .cabinet, .interior{
-		width: 33.33%;
-		height: 18.75rem;
-		background: red;
-
-	}
-
-	.threeHeroColumnsHead{
-		width: 90%;
-		text-align: center;
-		font-size: 1.125rem;
-		line-height: 1.3125rem
-		position: absolute;
-		top: 1.5625rem;
-
-	}
-
-	.threeHeroColumnsBody{
-		width: 95%;
-		font-size: 1rem;
-		line-height: 1.3125rem;
-	}*/
-	/*-------------------------------------------------------------*/
-	/*#header{
-		height: 850px;
-	}
 	.navContainer{
 		height: 5rem;
 	}
 
-	.navlinks {
+	.navlinks{
+		position: fixed;
+		margin-right: 0;
+		z-index: 1000;
+		inset: 0 0 0 50%;
+		flex-direction: column;
+		padding: min(20vh, 8rem) 2em;
 		gap:var(--gap, 1rem);
-	}
+		--gap:2em; /*Is this one really effective here?*/
+		transform: translateX(100%);
+		transition: transform 350ms ease-out;
+		background: hsl(0 0% 100% / 0.1);
+	  }
+
+	 @supports(backdrop-filter: blur(8rem)){
+
+		.primary-navigation{
+		  background: hsl(0 0% 100% / 0.1);
+		  backdrop-filter: blur(78rem);
+		}
+
+	  }
+
+	  .navlinks[data-visible="true"]{
+		transform: translateX(0%);
+
+	  }
+	  .mobile-nav-toggle{
+	  	display: block;
+	  	position: absolute;
+	  	z-index: 9999;
+	  	background-color: transparent;
+	  	background-image: url("imgs/menu.svg");
+	  	background-repeat: no-repeat;
+	  	border: 0;
+	  	width: 3.6875rem;
+	  	aspect-ratio: 1;
+	  	top:1rem;
+	  	right: 1rem;
+	  }
+
+      .mobile-nav-toggle[aria-expanded="true"]{
+		/*transition: transform 350ms ease-in-out;*/
+	  	top:1rem;
+	  	background-image: url("imgs/close.svg");
+	  }
+
 
 	#logo{
 		margin-left: .3125rem;
@@ -724,35 +705,57 @@
 	#heroPicture{
 		height: 21.875rem;
 		width: 18.75rem;
-	}*/
-
-	/*-----------------------promises-----------------------------*/
-	/*.promiseWrapper{
-		width: 95%;
-		height: 31.175rem;
 	}
 
-	.promises{
-		height: 15.125rem;
 
+	#threeHeroColumns{
+		width: 90%;
+		gap:var(--gap, .3125rem);
+	}
+
+	#threeHeroColumns .residential, .cabinet, .interior{
+		width: 33.33%;
+		height: 18.75rem;
+		background: red;
+	}
+
+	.threeHeroColumnsHead{
+		width: 90%;
+		text-align: center;
+		font-size: 1.125rem;
+		line-height: 1.3125rem
+		position: absolute;
+		top: 1.5625rem;
+
+	}
+
+	.threeHeroColumnsBody{
+		width: 95%;
+		font-size: 1rem;
+		line-height: 1.3125rem;
+	}
+	
+	/*-----------------------promises-----------------------------*/
+	.promiseWrapper{
+		width: 95%;
 	}
 
 	.promise{
 		font-size: 1rem;
 		gap:var(--gap, 1rem);
 	}
-*/
+
 	/*---------------------------------------our work----------------------------------*/
-	/*.ourWorkImgs{
+	.ourWorkImgs{
 		width: 90%;
 		flex-wrap: wrap;
 		margin: 2rem auto;
 		gap:var(--gap, 1rem);
 		justify-content: center;
-	}*/
+	}
 
 	/*---------------------------TRUSTED---------------------------------*/
-	/*.trustedContainer{
+	.trustedContainer{
 		width: 90%;
 
 	}
@@ -760,9 +763,9 @@
 	.trustedLadder{
 		display: none;
 	}
-*/
+
 	/*-----------------------TESTIMONIALS--------------------------------------*/
-	/*.testimonialsContainer{
+	.testimonialsContainer{
 		width: 90%;
 		align-items: center;
 		flex-direction: column;
@@ -777,8 +780,103 @@
 
 	.testimonyStatement{
 		top: 8.875rem;
-	}*/
-/*}*/
+	}
+}
 
+/*--------------------max width 600px---------------------------*/
+@media only screen and (max-width:574px){
+
+	#logo{
+		margin-top: 2rem;
+	}
+
+	.heroContainer .heroStatements{
+		width: 100%;
+		position: relative;
+		margin-left: 2rem;
+	 }
+
+	.heroStatements .heroHeader{
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.heroStatements .heroStatement{
+		width: 80%;
+		font-size: 1rem;
+		line-height: 1.3125rem;
+		margin-bottom: 1rem;
+	}
+
+	.heroStatements .callNow{
+		right: 30%;
+		bottom: -0.625rem;
+		/*bottom: 0.0125rem;*/
+	}
+
+	#heroPicture{
+		display: none;
+	}
+
+
+	#threeHeroColumns{
+		/*background: #fff;*/
+		width: 100%;
+		padding-top: .625rem;
+		flex-direction: column;
+		align-items: center;
+		/*justify-content: space-between;*/
+		gap:var(--gap, 1rem);
+	}
+
+	#threeHeroColumns .residential, .cabinet, .interior{
+		width: 80%;
+		height: 15.625rem;
+		/*delete below bit*/
+		background: #0E4949;
+		border-radius: 0.625rem;
+		gap:var(--gap, 0rem);
+	}
+	.threeHeroColumnsHead{
+		font-size: 1.3125rem;
+		line-height: 1.875rem;
+		width: 70%;
+	}
+
+	.threeHeroColumnsBody{
+		width:60%;
+	}
+
+	/*-------------------|||promise|||-------------------------------*/
+	.promiseWrapperContainer{
+		width: 80%;
+		background: #fff;
+	}
+
+	.promiseWrapper{
+		border-radius: 0.625rem;
+		width: 100%;
+	}
+
+	.promiseWrapperParagraph p{
+		width: 80%;
+	}
+	.promiseWrapper h2{
+		margin-top: 1rem;
+	}
+	.promises{
+		background: #E5E5E5;
+		border: 4px solid #0E4949;
+		border-radius: 0.625rem;
+		padding: 1.25rem;
+	}
+	.promise{
+		font-size: 1rem;
+		line-height: 1.3125rem;
+
+	}
+	/*--------------------------------------------------------------------*/
+
+}
 
 
