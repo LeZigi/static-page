@@ -42,7 +42,7 @@
 
 	 			<div class="contactDetails flex">
 	 				<i class="fa fa-map-marker" aria-hidden="true"></i>
-	 				<span class="locationText">1st Floor, Suite A104, Madonna House Annex,Westlands Road.</span>
+	 				<span class="locationText">1st Floor, Suite A307, Madonna House Annex,Westlands Road.</span>
 	 			</div>
 
 	 			<div class="line">
@@ -57,35 +57,35 @@
 
 	 		  <div class="contactFormInputContainer">
 
-	 			  <div class="contactInputs flex">
-	 				<div class="contactFormInput  flex">
-	 					<span>First name</span>
-	 					<input type="" name="">
-	 				</div>
-	 				<div class="contactFormInput flex">
-	 					<span>Last name</span>
-	 					<input type="" name="">
-	 				</div>
-	 				<div class="contactFormInput flex">
-	 					<span>Email</span>
-	 					<input type="" name="">
-	 				</div>
-	 				<div class="contactFormInput flex">
-	 					<span>Phone</span>
-	 					<input type="" name="">
-	 				</div>
-	 			 </div>
+		 			  <div class="contactInputs flex">
+		 				<div class="contactFormInput  flex">
+		 					<span>First name</span>
+		 					<input type="" name="">
+		 				</div>
+		 				<div class="contactFormInput flex">
+		 					<span>Last name</span>
+		 					<input type="" name="">
+		 				</div>
+		 				<div class="contactFormInput flex">
+		 					<span>Email</span>
+		 					<input type="" name="">
+		 				</div>
+		 				<div class="contactFormInput flex">
+		 					<span>Phone</span>
+		 					<input type="" name="">
+		 				</div>
+		 			 </div>
 
- 				<div class="contactFormInput flex">
- 					<span >Subject</span>
- 					<input class="subject" type="" name="">
- 				</div>
- 				<div class="contactFormInput flex">
- 					<span>Message</span>
- 					<textarea class="textArea"></textarea>
- 				</div>
-	 			
-	 			<button class="submitBtn">Submit</button>
+	 				<div class="contactFormInput flex">
+	 					<span >Subject</span>
+	 					<input class="subject" type="" name="">
+	 				</div>
+	 				<div class="contactFormInput flex">
+	 					<span>Message</span>
+	 					<textarea class="textArea"></textarea>
+	 				</div>
+		 			
+		 		   <button class="submitBtn">Submit</button>
 	 				
 	 		  </div>	
 
