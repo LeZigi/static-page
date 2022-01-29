@@ -6,6 +6,7 @@
 	<link rel="stylesheet"  href="css/fontawesome.min.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Poppins|Trirong|Rubik|Oswald">
 	<link rel="stylesheet" type="text/css" href="contact.css" />
+	<script src="projectPainters.js" defer></script>
 
 </head>
 <body>
@@ -13,7 +14,10 @@
 		<div id="logo" >
 			
 		</div>
-		<ul class="navlinks flex">
+		<button class="mobile-nav-toggle"aria-controls="navlinks" aria-expanded="false"><span class="sr-only">MENU</span>
+		</button>
+
+		<ul id="navlinks" data-visible="false" class="navlinks flex">
 			<li><a href="contact.php">FAQ</a></li>
 			<li><a href="about.html">ABOUT</a></li>
 			<li><a href="service.html">OUR SERVICES</a></li>
@@ -25,6 +29,7 @@
 	 <section id="contact">
 
 	 	<div class="contactContainer flex">
+
 	 		<div class="contactInfo">
 
 	 			<h2 class="contactInfoTitle">Contact Information</h2>
@@ -37,12 +42,12 @@
 
 	 			<div class="contactDetails flex">
 	 				<i class="fa fa-envelope" aria-hidden="true"></i>
-	 				<span>info@caselliexperts.com</span>
+	 				<span>info@jenifpainting.com</span>
 	 			</div>
 
 	 			<div class="contactDetails flex">
 	 				<i class="fa fa-map-marker" aria-hidden="true"></i>
-	 				<span class="locationText">1st Floor, Suite A307, Madonna House Annex,Westlands Road.</span>
+	 				<span class="locationText">3st Floor, Suite A307, Excuisite House Annex,Westlands Road.</span>
 	 			</div>
 
 	 			<div class="line">
@@ -125,12 +130,14 @@
 	 			<h3>Tempor in tortor imperdiet aliquet ? </h3>
 	 			<p>Nec tellus sem pulvinar sed morbi porttitor sit magna imperdiet.</p>
 	 		</div>
+
+	 		<h1 class="faqBackgroundText">?</h1>
 	 	</div>
 	 	
 	 </section>
 
 	<section id="footer" class="flex">
-		<span> © 2022 Caselli Painting Experts LTD. All rights reserved.</span>
+		<span> © 2022 Jenif Painting Experts LTD. All rights reserved.</span>
 	</section>
 
 </body>

@@ -80,9 +80,9 @@
 
 }
 
-
 .contactInfo p{
 	width: 90%;
+	color: #aaaaaa;
 	margin: 3rem auto;
 	font-size: 1rem;
 }
@@ -90,7 +90,9 @@
 .contactDetails{
 	font-family: Rubik;
 	font-size: 1rem;
-	width: 23.75rem;
+	/*width: 23.75rem;*/
+	width: 80%;
+	/*background: skyblue;*/
 	margin: 2rem auto;
 	flex-direction: column;
 	align-items: center;
@@ -151,7 +153,7 @@
 
 input{
 	width: 15.625rem;
-	/*width: 21.875rem;*/
+	/*width: 100%;*/
 	height: 1.875rem;
 	border: 0.125rem solid rgba(180, 177, 177,.7);
 	border-radius: .625rem;
@@ -191,14 +193,14 @@ input{
 
 /*-------------FAQ----------------------------*/
 #FAQ{
-	height: 37.5rem;
+	/*height: 37.5rem;*/
 	/*height: 40.625rem;*/
 	background: #043535;
-	/*border-radius: 1.25rem;*/
-	/*box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);*/
+	/*border-radius: 1.25rem;*
 	/*width: 80%;*/
 	margin: 0 auto;
-	padding-top: 3rem;
+	padding: 2rem 0;
+	/*padding-top: 3rem;*/
 	border-top-right-radius: 1.25rem;
 	border-top-left-radius: 1.25rem;
 }
@@ -211,7 +213,8 @@ input{
 	color: #fff;
 }
 .faqStatement{
-	max-width:  61.125rem;
+	/*max-width:  61.125rem;*/
+	max-width:  80%;
 	font-family: poppins, Roboto, san-serif;
 	font-size: 1.125rem;
 	line-height: 1.3125rem;
@@ -221,24 +224,37 @@ input{
 
 }
 .faqs{
-	margin: 5rem auto;
+	margin: 3rem auto 0;
 	flex-direction: column;
 	flex-wrap: wrap;
-	/*background: red;*/
-	width: 73.125rem;
+	/*background: yellow;*/
+	width: 90%;
+	/*width: 73.125rem;*/
 	height: 20.625rem;
 	color: #fff;
 	font-size: 1.125rem;
 	line-height: 1.3125rem;
 	gap:var(--gap, 1.25rem);
-
+	position: relative;
+	z-index: 100;
 
 }
 
 .faq p{
+	/*max-width: 0%;*/
 	max-width: 35.5rem;
 	color: #aaaaaa;
 	margin-top: 1rem;
+}
+.faqBackgroundText{
+	position: absolute;
+	color: #266060;
+	font-size: 500px;
+	left: 50%;
+	transform: translate(-50%,0);
+	top: 50%;
+	transform: translateY(-50%,0);
+	z-index: -1;
 }
 /*---------Enter footer section---------------*/
 #footer{
@@ -257,16 +273,243 @@ input{
 	color: rgb(133, 122, 122);
 }
 
-@media only screen and (max-width:1350px){
+@media only screen and (max-width:1355px){
+	.contactForm{
+		background: rebeccapurple;
+	}
 	
 	input{
 		width: 100%;
-		height: 1.875rem;
-		/*border: 0.125rem solid rgba(180, 177, 177,.7);*/
-		/*border-radius: .625rem;*/
-		/*text-align: center;*/
-		/*color: #043535;*/
-		/*font-size: 0.875rem;*/
-		/*font-weight: 600;*/
+	}
+	.faqs{
+		/*background: papayawhip;*/
+		width: 100%;
+		padding-left: 2rem;
+	}
+}
+
+@media only screen and (max-width:1200px){
+	.faqs{
+		/*background: forestgreen;*/
+		/*width: 80%;*/
+		/*height: 40rem;*/
+		/*justify-content: center;*/
+		/*align-content: center;*/
+		/*padding-left: 2rem;*/
+		/*flex-wrap: nowrap;*/
+		/*padding-left: 0;*/
+
+	}
+	.faq p{
+		max-width: 30.5rem;
+	}
+}
+
+@media only screen and (max-width:1040px){
+	.contactContainer{
+		width: 90%;
+	}
+
+	.contactDetails{
+		margin: 1.25rem auto;
+	}
+
+	.contactForm{
+		background: tomato;
+	}
+	/*.faqs{
+		background: red;
+	}*/
+	.faq p{
+		max-width: 25.5rem;
+	}
+}
+
+@media only screen and (max-width:1024px){
+
+	.contactForm{
+		background: cadetblue;
+	}
+
+	/*.faqs{
+		background: tomato;
+	}*/
+	
+}
+
+@media only screen and (max-width:917px){
+
+	.contactDetails{
+		width: 90%;
+
+	}
+
+	.contactForm{
+		background: goldenrod;
+	}
+
+	.contactInputs{
+		flex-direction: column;
+	}
+
+	.textArea{
+		height: 4.6875rem;
+		margin-bottom: 1.25rem;
+	}
+
+	.faqs{
+		/*background: blue;*/
+		width: 35.5rem;
+		padding-left: 0;
+		height: 32.5rem;
+		flex-wrap: nowrap;
+	}
+
+	.faq p{
+		max-width: 35.5rem;
+	}
+	.faqBackgroundText{
+	/*	position: absolute;
+		color: #266060;*/
+		font-size: 700px;
+		/*left: 50%;
+		transform: translate(-50%,0);
+		top: 50%;
+		transform: translateY(-50%,0);
+		z-index: -1;*/
+	}
+
+}
+
+
+@media only screen and (max-width:768px){
+	.navContainer{
+		height: 5rem;
+	}
+
+	/*.navlinks{
+		position: fixed;
+		margin-right: 0;
+		z-index: 1000;
+		inset: 0 0 0 0;
+		flex-direction: column;
+		padding: min(20vh, 8rem) 2em;
+		gap:var(--gap, 1rem);
+		transform: translateX(100%);
+		transition: transform 350ms ease-out;
+		background: hsl(0 0% 100% / 0.5);
+	  }*/
+
+		@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+			  .navlinks {
+			    -webkit-backdrop-filter: blur(5rem);
+			    backdrop-filter: blur(8rem);
+			    background: hsl(0 0% 100% / 0.1);  
+			  }
+		}
+
+	/* .navlinks[data-visible="true"]{
+		transform: translateX(0%);
+
+	  }*/
+	/*  .mobile-nav-toggle{
+	  	display: block;
+	  	position: absolute;
+	  	z-index: 9999;
+	  	background-color: transparent;
+	  	background-image: url("imgs/menu.svg");
+	  	background-repeat: no-repeat;
+	  	border: 0;
+	  	width: 3.6875rem;
+	  	aspect-ratio: 1;
+	  	top:1.5rem;
+	  	right: 1rem;
+	  }*/
+
+/*      .mobile-nav-toggle[aria-expanded="true"]{
+	  	top:1rem;
+	  	background-image: url("imgs/close.svg");
+	  }*/
+
+
+	.contactContainer{
+		width: 80%;
+		height: 61.625rem;
+		flex-direction: column;
+	}
+
+	.contactInfo{
+		overflow: initial;
+		border-top-left-radius: 1.25rem;
+		border-top-right-radius: 1.25rem;
+		border-bottom-left-radius: 0;
+
+	}
+	.contactInfoTitle{
+		margin: 2rem 0;
+	}
+
+	.contactInfo p{
+		margin: 1rem auto;
+	}
+	.contactDetails{
+		width: 80%;
+		margin: 1rem auto;
+		flex-direction: column;
+		align-items: center;
+		gap:var(--gap, .3125rem);
+
+	}
+
+	.line{
+		display: none;
+	}
+
+	/*-----------------------------------*/
+	.contactForm{
+		background: red;
+		/*border-top-left-radius: 1.25rem;
+		border-top-right-radius: 1.25rem;
+		border-bottom-left-radius: 0;*/
+	}
+
+	.contactFormTitle{
+		margin: 2rem auto 1rem;
+	}
+
+	.contactInputs,.subject{
+		gap:var(--gap, 1rem);
+		margin-bottom: 1rem;
+	}
+
+	.submitBtn{
+		border-radius: 1.25rem;
+		height: 2rem;
+	}
+
+	.faqs{
+		/*background: hotpink;*/
+		width: 80%;
+		height: 38.5rem;
+		justify-content: center;
+	}
+
+	/*.faqBackgroundText{
+		font-size: 100px;
+		left: 50%;
+		transform: translate(-50%,0);
+		top: 50%;
+		transform: translateY(-50%,0);
+	}*/
+
+}
+@media only screen and (max-width:600px){
+	.contactForm{
+		background: mediumaquamarine;
+		/*flex: 2.5;*/
+	}
+
+	.faqs{
+		height: 38.5rem;
 	}
 }
