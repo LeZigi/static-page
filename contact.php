@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet"  href="css/all.min.css" />
 	<link rel="stylesheet"  href="css/fontawesome.min.css" />
@@ -10,20 +11,25 @@
 
 </head>
 <body>
-	 <nav class="navContainer flex">
-		<div id="logo" >
+	 <nav id="nav" class="navContainer flex">
+		<!-- <div id="logo" >
 			
-		</div>
+		</div> -->
+		<a id="logo" class="setPics" href="index.html">
+				
+		</a>
+
 		<button class="mobile-nav-toggle"aria-controls="navlinks" aria-expanded="false"><span class="sr-only">MENU</span>
 		</button>
 
 		<ul id="navlinks" data-visible="false" class="navlinks flex">
-			<li><a href="contact.php">FAQ</a></li>
-			<li><a href="about.html">ABOUT</a></li>
-			<li><a href="service.html">OUR SERVICES</a></li>
-			<li><a href="testimonial.html">TESTIMONIALS</a></li>
-			<li><a href="contact.php">CONTACT</a></li>
+			<li><a href="#FAQ">FAQ</a></li>
+			<li><a href="index.html#trusted">ABOUT</a></li>
+			<li><a href="index.html#ourServices">OUR SERVICES</a></li>
+			<li><a href="index.html#testimonials">TESTIMONIALS</a></li>
+			<li><a href="#contact">CONTACT</a></li>
 		</ul>
+
 	 </nav>
 	
 	 <section id="contact">
@@ -65,7 +71,7 @@
 		 			  <div class="contactInputs flex">
 		 				<div class="contactFormInput  flex">
 		 					<span>First name</span>
-		 					<input type="" name="">
+		 					<input type=""  name="" >
 		 				</div>
 		 				<div class="contactFormInput flex">
 		 					<span>Last name</span>
@@ -136,8 +142,13 @@
 	 	
 	 </section>
 
+	 <a href="#nav" id="top" class="flex">
+		<span id="top-symbol">^</span>
+		<span id="top-words">TOP</span>
+	</a>
+
 	<section id="footer" class="flex">
-		<span> © 2022 Jenif Painting Experts LTD. All rights reserved.</span>
+		<span> With ♥️. © 2022 Jenif Painting Experts LTD.</span>
 	</section>
 
 </body>

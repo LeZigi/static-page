@@ -20,3 +20,37 @@ const navToggle = document.querySelector('.mobile-nav-toggle')
 		}
 
 	})
+
+	window.onscroll = scrollFunction;
+
+	function scrollFunction() {
+
+	  let mybutton = document.getElementById("top")
+
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    mybutton.style.display = "flex";
+	  } else {
+	    mybutton.style.display = "none";
+	  }
+
+	}
+
+
+	// --------------
+	// const handleDelete = (target)=>{
+	// 	setAllTasks((prev)=>(prev.filter((task)=>(task.id !== target))))
+	// }
+
+	// const fruits = [lemons,bananas,strawberries,pawpaw,apple,kiwi,melon]
+
+	// fruits.map((fruit,index)=>(
+	// 		<ul>
+	// 			<li id={index}>
+	// 				{fruit}
+	// 			<li/>
+	// 		<ul/>
+	// 	))
+
+	// const handleAdd = ()=>{
+	// 	setItem((prev)=>{item:name, ...prev})
+	// }

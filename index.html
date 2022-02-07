@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet"  href="css/all.min.css" />
 	<link rel="stylesheet"  href="css/fontawesome.min.css" />
@@ -12,22 +13,26 @@
 
 </head>
 <body>
-	
+
 	<section id="header">
 
 		 <nav class="navContainer flex">
-			<div id="logo" class="setPics" >
+			<!-- <div id="logo" class="setPics" >
 				
-			</div>
+			</div> -->
+
+			<a id="logo" class="setPics" href="index.html">
+				
+			</a>
 
 			<button class="mobile-nav-toggle"aria-controls="navlinks" aria-expanded="false"><span class="sr-only">MENU</span></button>
 
 			<ul id="navlinks" data-visible="false" class="navlinks flex">
-				<li><a href="contact.php">FAQ</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="service.html">OUR SERVICES</a></li>
-				<li><a href="testimonial.html">TESTIMONIALS</a></li>
-				<li><a href="contact.php">CONTACT</a></li>
+				<li><a href="contact.php#FAQ">FAQ</a></li>
+				<li><a href="#trusted">ABOUT</a></li>
+				<li><a href="#ourServices">OUR SERVICES</a></li>
+				<li><a href="#testimonials">TESTIMONIALS</a></li>
+				<li><a href="contact.php#contact">CONTACT</a></li>
 			</ul>
 		 </nav>
 
@@ -37,7 +42,10 @@
 		 		<p class="heroStatement">Jenif Painting Experts provide top tier customer service for exterior and interior house painting, commercial painting, cabinet painting and paint related consultations</p>
 
 		 		<div class="btnAndCall flexi">
-			 		<button id="heroButton" class="themeColor">Free Estimate</button>
+			 		<!-- <button id="heroButton" >Free Estimate</button> -->
+			 		<!-- <a id="heroButton" href="contact.php">Free Estimate</a> -->
+			 		<a href="contact.php"><button id="heroButton" >Free Estimate</button></a>
+			 		
 			 		<div class="callNow">
 			 			<div class="callNowIcon flexi">
 			 				<i class="fa fa-phone" aria-hidden="true"></i>
@@ -54,21 +62,31 @@
 		 </div>
 
 		 <div id="threeHeroColumns" class="flexi">
-		 	<div class="residential flexi">
-		 		<h2 class="threeHeroColumnsHead">Residential and Commercial Painting</h2>
-		 		<p class="threeHeroColumnsBody">We off you 100% satisfaction on our residential and commercial painting services.</p>
-		 		<button class="threeHeroColumnsBtn">Get in Touch</button>
-		 	</div>
-		 	<div class="cabinet flexi">
-		 		<h2 class="threeHeroColumnsHead">Cabinet Refinishing and Painting</h2>
-		 		<p class="threeHeroColumnsBody" >Bring a new life to your kitchen without spending like it’s a new kitchen.</p>
-		 		<button class="threeHeroColumnsBtn">Get in Touch</button>
-		 	</div>
-		 	<div class="interior flexi">
-		 		<h2 class="threeHeroColumnsHead">Interior and exterior painting</h2>
-		 		<p class="threeHeroColumnsBody" >We not only offer <span>FREE</span> estimates for any size project, we also use the best supplies guaranteed for durability.</p>
-		 		<button class="threeHeroColumnsBtn">Get in Touch</button>
-		 	</div>
+		 	 <!-- <a href="contact.php"> -->
+			 	<div class="residential column flexi">
+			 		<h2 class="threeHeroColumnsHead">Residential and Commercial Painting</h2>
+			 		<p class="threeHeroColumnsBody">We offer you 100% satisfaction on our residential and commercial painting services.</p>
+			 		<a href="contact.php" class="threeHeroColumnsBtn"><button >Get in Touch</button></a>
+
+			 		<!-- <button class="threeHeroColumnsBtn">Get in Touch</button> -->
+			 	</div>
+			 <!-- </a> -->
+			 <!-- <a href="contact.php"> -->
+			 	<div class="cabinet column flexi">
+			 		<h2 class="threeHeroColumnsHead">Cabinet Refinishing and Painting</h2>
+			 		<p class="threeHeroColumnsBody" >Bring a new life to your kitchen without spending like it’s a new kitchen.</p>
+			 		<a href="contact.php" class="threeHeroColumnsBtn"><button  >Get in Touch</button></a>
+			 		<!-- <button class="threeHeroColumnsBtn">Get in Touch</button> -->
+			 	</div>
+		 	<!-- </a> -->
+		 	<!-- <a href="contact.php"> -->
+			 	<div class="interior column flexi">
+			 		<h2 class="threeHeroColumnsHead">Interior and exterior painting</h2>
+			 		<p class="threeHeroColumnsBody" >We not only offer <span>FREE</span> estimates for any size project, we also use the best supplies guaranteed for durability.</p>
+			 		<a href="contact.php" class="threeHeroColumnsBtn"><button  >Get in Touch</button></a>
+			 		<!-- <button class="threeHeroColumnsBtn">Get in Touch</button> -->
+			 	</div>
+		 	<!-- </a> -->
 		 </div>
 		
 	</section>
@@ -119,30 +137,36 @@
 
 		<div class="services flexi">
 			
-			<div class="service flexi">
+			<a href="contact.php" class="service flexi">
 				<img class="serviceImg" src="imgs/exterior.svg" alt="">
 				<h2 class="serviceCaption">Exterior Wall Painting</h2>
-			</div>
-			<div class="service flexi">
-				<img class="serviceImg" src="imgs/kitchen.svg" alt="">
+			</a>
+
+			<a href="contact.php" class="service flexi">
+				<img class="serviceImg" src="imgs/kitchen.svg"  alt="">
 				<h2 class="serviceCaption">Kitchen Cabinets</h2>
-			</div>
-			<div class="service  flexi">
-				<img class="serviceImg" src="imgs/interior.svg" alt="">
+			</a>
+
+			<a href="contact.php" class="service flexi">
+				<img class="serviceImg" src="imgs/interior.svg"  alt="">
 				<h2 class="serviceCaption">Interior Wall Painting</h2>
-			</div>
-			<div class="service flexi">
-				<img class="serviceImg" src="imgs/bathroom.svg" alt="">
+			</a>
+
+			<a href="contact.php" class="service flexi">
+				<img class="serviceImg" src="imgs/bathroom.svg"  alt="">
 				<h2 class="serviceCaption">Bathroom Cabinets</h2>
-			</div>
-			<div class="service flexi">
-				<img class="serviceImg" src="imgs/renovations.svg" alt="">
+			</a>
+
+			<a href="contact.php" class="service flexi">
+				<img class="serviceImg" src="imgs/renovations.svg"  alt="">
 				<h2 class="serviceCaption">Home Renovations</h2>
-			</div>
-			<div class="service flexi">
-				<img class="serviceImg" src="imgs/powerwash.svg" alt="">
+			</a>
+
+			<a href="contact.php" class="service flexi">
+				<img class="serviceImg" src="imgs/powerwash.svg"  alt="">
 				<h2 class="serviceCaption">Thorough Cleaning</h2>
-			</div>
+			</a>
+
 		</div>
 		
 	</section>
@@ -269,8 +293,12 @@ We have over three years experience in painting services under our belt over whi
 		</div>
 
 	</section>
-
-	<section id="contact">
+<!-- <button id="top">↑ TOP</button> -->
+	<a href="#header" id="top" >
+		<span id="top-symbol">^</span>
+		<span id="top-words">TOP</span>
+	</a>
+	<!-- <section id="contact">
 
 		<div class="contactContainer flexi">
 			<div class="contactDetails flexi">
@@ -281,10 +309,10 @@ We have over three years experience in painting services under our belt over whi
 			</div>
 		</div>
 		
-	</section>
+	</section> -->
 
 	<section id="footer" class="flexi">
-		<span> © 2022 Jenif Painting Experts LTD. All rights reserved.</span>
+		<span> With ♥️. © 2022 Jenif Painting Experts LTD.</span>
 	</section>
 
 </body>
